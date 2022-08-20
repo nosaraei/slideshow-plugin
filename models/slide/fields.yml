@@ -6,9 +6,17 @@ fields:
     name:
         label: flosch.slideshow::lang.fields.slide.name
         span: left
-    link:
-        label: flosch.slideshow::lang.fields.slide.link
-        span: right
+#    link:
+#        label: flosch.slideshow::lang.fields.slide.link
+#        span: right
+#        type: recordfinder
+#        list: ~/plugins/silverageco/constant/models/targetlink/columns.yaml
+#        recordsPerPage: 10
+#        title: جستجوی لینک
+#        prompt: جهت پیدا کردن لینک مورد نظر کلیک کنید
+#        keyFrom: id
+#        nameFrom: description
+#        useRelation: true
     unpublished_at:
         label: flosch.slideshow::lang.fields.slide.unpublished_at
         span: right
@@ -21,6 +29,9 @@ fields:
         label: flosch.slideshow::lang.fields.slide.is_published
         span: left
         type: checkbox
+    sort_order:
+        label: flosch.slideshow::lang.fields.slide.sort_order
+        span: right
     description:
         label: flosch.slideshow::lang.fields.slide.description
         type: richeditor

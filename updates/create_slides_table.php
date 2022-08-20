@@ -16,7 +16,7 @@ class CreateSlidesTable extends Migration
                 $table->increments('id');
                 $table->string('name')->nullable();
                 $table->text('description')->nullable();
-                $table->string('link', 255)->nullable();
+                $table->integer('link_id')->unsigned()->nullable();
                 $table->integer('sort_order')->default(0);
                 $table->timestamps();
                 $table->integer('slideshow_id')->unsigned()->nullable();

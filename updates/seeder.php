@@ -19,8 +19,7 @@ class Seeder extends BaseSeeder
         for ($i = 0; $i < 3; $i++) {
             $slide = Slide::make([
                 'name' => $i,
-                'description' => sprintf('Slide N°%d', $i),
-                'link' => 'http://example.com/'
+                'description' => sprintf('Slide N°%d', $i)
             ]);
 
             $slide->slideshow()->associate($slideshow)->save();

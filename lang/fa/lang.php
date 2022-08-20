@@ -85,6 +85,7 @@
             'description' => 'توضیحات',
             'link' => 'لینک',
             'image' => 'تصویر',
+            'sort_order' => 'ترتیب نمایش',
             'unpublished_at' => 'پایان ارسال جهت نمایش',
             'published_at' => 'شروع ارسال جهت نمایش',
             'is_published' => 'نمایش داده شود؟',

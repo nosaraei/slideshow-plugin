@@ -3,7 +3,6 @@
 namespace Flosch\Slideshow\Components;
 
 use Lang;
-
 use Cms\Classes\ComponentBase;
 
 use Flosch\Slideshow\Models\Slideshow as SlideshowModel;
@@ -60,6 +59,25 @@ class Slideshow extends ComponentBase
             }])
         ;
 
-        $this->slideshow = $slideshowQueryBuilder->firstOrFail();
+        $this->slideshow = $slideshowQueryBuilder->first();
+
+        if(!$this->slideshow || $this->slideshow->slides->count() == 0){
+            $this->slideshow = [
+                "slides" => [
+                    [
+                        "name" => "",
+                        "image" => [
+                            "path" => url("plugins/flosch/slideshow/assets/img/slide-placeholder.svg")
+                        ],
+                    ],
+                    [
+                        "name" => "",
+                        "image" => [
+                            "path" => url("plugins/flosch/slideshow/assets/img/slide-placeholder.svg")
+                        ],
+                    ]
+                ]
+            ];
+        }
     }
 }

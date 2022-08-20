@@ -12,8 +12,8 @@ columns:
     name:
         label: flosch.slideshow::lang.columns.slide.name
         searchable: true
-    link:
-        label: flosch.slideshow::lang.columns.slide.link
-        searchable: true
+#    link:
+#        label: flosch.slideshow::lang.columns.slide.link
+#        searchable: true
     is_published:
         label: flosch.slideshow::lang.columns.slide.is_published
